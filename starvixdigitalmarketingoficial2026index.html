@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starvix | Agencia Creativa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter', sans-serif;
+}
+
+body{
+background: linear-gradient(180deg,#050816,#0a0f2a);
+color:white;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 10%;
+position:fixed;
+width:100%;
+background:rgba(5,8,22,0.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav img{
+height:80px; /* LOGO MÁS GRANDE */
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:40px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#00c6ff;
+}
+
+/* HERO */
+
+.hero{
+padding:220px 10% 120px 10%;
+text-align:center;
+}
+
+.hero img{
+width:260px; /* LOGO PRINCIPAL MÁS GRANDE */
+margin-bottom:40px;
+}
+
+.hero h1{
+font-size:65px;
+font-weight:900;
+line-height:1.1;
+background:linear-gradient(90deg,#00c6ff,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+margin-top:30px;
+font-size:22px;
+color:#cccccc;
+max-width:900px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:50px;
+padding:18px 45px;
+border-radius:10px;
+background:linear-gradient(90deg,#ffd700,#00c6ff);
+color:black;
+font-weight:700;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTION */
+
+section{
+padding:120px 10%;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+font-size:45px;
+font-weight:800;
+margin-bottom:60px;
+color:#ffd700;
+text-align:center;
+}
+
+/* ABOUT */
+
+.about p{
+font-size:20px;
+color:#cccccc;
+line-height:1.8;
+text-align:center;
+}
+
+/* SERVICES */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:50px;
+margin-top:50px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 30px rgba(0,198,255,0.2);
+}
+
+.card h3{
+font-size:22px;
+margin-bottom:20px;
+color:#00c6ff;
+}
+
+.card p{
+color:#cccccc;
+}
+
+/* OFFER */
+
+.offer{
+background:linear-gradient(90deg,#111,#1b1f3a);
+padding:70px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 40px rgba(255,215,0,0.3);
+}
+
+.price{
+font-size:70px;
+font-weight:900;
+color:#ffd700;
+margin:20px 0;
+}
+
+/* DIFFERENCE SECTION */
+
+.difference{
+text-align:center;
+}
+
+.difference p{
+font-size:22px;
+color:#cccccc;
+margin-bottom:30px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:60px;
+}
+
+.gallery img{
+width:350px;
+border-radius:20px;
+box-shadow:0 0 30px rgba(0,198,255,0.4);
+}
+
+/* WHATSAPP FLOAT */
+
+.whatsapp-float{
+position:fixed;
+bottom:30px;
+right:30px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.whatsapp-float img{
+width:35px;
+}
+
+/* FOOTER */
+
+footer{
+padding:60px;
+text-align:center;
+color:#aaa;
+background:#050816;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero img{
+width:200px;
+}
+
+nav img{
+height:60px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<img src="LOGO STARVIX.png" alt="Starvix Logo">
+<div>
+<a href="#about">Nosotros</a>
+<a href="#services">Servicios</a>
+<a href="#offer">Promoción</a>
+<a href="#contact">Contacto</a>
+</div>
+</nav>
+
+<div class="hero">
+<img src="LOGO STARVIX - copia.png" alt="Logo Principal">
+<h1>Hacemos que tu marca destaque como una estrella.</h1>
+<p>
+En Starvix revolucionamos la forma en que se crea publicidad. 
+Combinamos innovación, estrategia y diseño de alto impacto para ofrecer resultados atractivos, originales y personalizados en menos de 24 horas.
+</p>
+<a class="btn" href="https://wa.me/523122286999" target="_blank">
+Solicitar por WhatsApp
+</a>
+</div>
+
+<section id="about" class="about">
+<div class="section-title">¿Por qué Starvix?</div>
+<p>
+Trabajamos con clientes en México y Estados Unidos, adaptándonos al estilo, visión y necesidades específicas de cada marca.
+Entendemos tu esencia, potenciamos tu identidad y transformamos tus ideas en diseños que brillan y generan resultados reales.
+En un mercado saturado, no solo diseñamos… creamos impacto.
+</p>
+</section>
+
+<section id="services">
+<div class="section-title">Servicios</div>
+<div class="grid">
+<div class="card">
+<h3>🚀 Creación de Flyer desde $500 MXN</h3>
+<p>Diseños atractivos y personalizados que impulsan tus ventas.</p>
+</div>
+<div class="card">
+<h3>⚡ Entrega en menos de 24 horas</h3>
+<p>Rapidez sin sacrificar calidad ni profesionalismo.</p>
+</div>
+<div class="card">
+<h3>🎨 Adaptado a tu marca</h3>
+<p>Cada diseño refleja la esencia y estilo de tu negocio.</p>
+</div>
+</div>
+</section>
+
+<section id="offer">
+<div class="offer">
+<h2>FLYER + CREACIÓN DE LOGO</h2>
+<div class="price">$500 MXN</div>
+<p>✨ Visualización previa incluida por promoción de apertura</p>
+<a class="btn" href="https://wa.me/523122286999" target="_blank">
+Aprovechar Promoción
+</a>
+</div>
+</section>
+
+<section class="difference">
+<div class="section-title">Transformación Visual</div>
+<p>
+¿Tu negocio no está creciendo? ¿Pocos clientes? ¿Bajas ventas?
+Tal vez necesitas renovar tu imagen y destacar frente a tu competencia.
+En Starvix transformamos tu marca con diseños que generan impacto real.
+</p>
+
+<div class="gallery">
+<img src="FLYER STARVIX.png" alt="Flyer Starvix">
+<img src="LOGO STARVIX.png" alt="Logo Starvix">
+</div>
+</section>
+
+<section id="contact">
+<div class="section-title">Contacto</div>
+<p style="text-align:center; font-size:22px;">WhatsApp: 312 228 6999</p>
+<div style="text-align:center;">
+<a class="btn" href="https://wa.me/523122286999" target="_blank">
+Enviar Mensaje Directo
+</a>
+</div>
+</section>
+
+<footer>
+© 2026 Starvix Marketing Agency · Ignite · Create · Grow
+</footer>
+
+<a href="https://wa.me/523122286999" class="whatsapp-float" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+</body>
+</html>
